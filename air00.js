@@ -1,15 +1,15 @@
-function ma_fonction(string_a_couper) {
+function ma_fonction(stringcut) {
   if (args.length !== 1) {
     console.error("Error: Veuillez fournir exactement une chaîne à découper.");
     process.exit(1);
   }
 
-  if (typeof string_a_couper !== "string") {
+  if (typeof stringcut !== "string") {
     console.error("Error: L'argument doit être une chaîne de caractères.");
     return;
   }
 
-  const tableau = string_a_couper.split(" ");
+  const tableau = stringcut.split(" ");
 
   tableau.forEach((element) => {
     console.log(element);
